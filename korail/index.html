@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>철마는 달리고싶다 - Let's korail</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/8db961635d.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="scrollToTop"></div>
+    <header>
+        <div class="top_banner">
+            <div class="inner">
+                <ul>
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#"><span>- </span> 글씨크기 <span> +</span></a></li>
+                </ul>
+            </div>
+        </div><!-- //.top_banner -->
+        <div class="header_bt">
+            <div class="inner">
+                <div class="logo">
+                    <h1><a href="index.html">
+                            <img src="img/logo.png" alt="코레일 new로고">
+                        </a></h1>
+                </div><!-- //.logo -->
+                <div class="trainAni">
+                    <div class="train"><img src="img/train.png" alt="기차"></div>
+                    <div class="rail"><img src="img/train_rail.png" alt="기찻길"></div>
+                </div>
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="#">승차권</a></li>
+                        <li><a href="#">관광열차</a></li>
+                        <li><a href="#">여행상품</a></li>
+                        <li><a href="#">이용안내</a></li>
+                        <li><a href="#">회원서비스</a></li>
+                    </ul>
+                </nav>
+                <div class="ham">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div><!-- //.inner -->
+        </div><!-- //.header_bt -->
+    </header>
+    <main>
+        <div class="inner">
+            <div class="reserv">
+                <div class="reserv_lt">
+                    <h2>승차권 간편 예매</h2>
+                    <div class="dep">
+                        <h3>출발역</h3>
+                        <select type="text">
+                            <option>서울</option>
+                            <option>대전</option>
+                            <option>대구</option>
+                            <option>부산</option>
+                        </select>
+                    </div><!-- //.dep -->
+                    <div class="arr">
+                        <h3>도착역</h3>
+                        <select type="text">
+                            <option>부산</option>
+                            <option>대전</option>
+                            <option>대구</option>
+                        </select>
+                    </div><!-- //.arr -->
+                    <div class="reserv_line"></div>
+                    <div class="dep_time">
+                        <h3>출발일</h3>
+                        <input type="date">
+                    </div><!-- //.dep_time -->
+                    <div class="quantity">
+                        <div class="adult">
+                            <p>어른 <span>(만 13세 이상)</span></p>
+                            <div class="qt">
+                                <button type="button" onclick="fnCalCount('m', this);">-</button>
+                                <input type="number" name="pop_out" value="1" min="1" max="10">
+                                <button type="button" onclick="fnCalCount('p',this);">+</button>
+                            </div><!-- //.qt -->
+                        </div><!-- //.adult -->
+                        <div class="child">
+                            <p>아이 <span>(만 6세~12세)</span></p>
+                            <div class="qt">
+                                <button type="button" onclick="fnCalCount('m', this);">-</button>
+                                <input type="number" name="pop_out" value="0" min="1" max="10">
+                                <button type="button" onclick="fnCalCount('p',this);">+</button>
+                            </div><!-- //.qt -->
+                        </div><!-- //.child -->
+                    </div><!-- //.quantity -->
+                    <div class="reserv_btn">
+                        <a href="#">
+                            <svg>
+                                <rect x="0" y="0" fill="none" width="100%" height="100%"></rect>
+                            </svg>
+                            승차권 예매하기
+                        </a>
+                    </div>
+                </div><!-- ///.reserv_left -->
+                <div class="reserv_rt">
+                    <section class="gbs on">
+                        <h2><a href="#">경부선</a></h2>
+                        <img src="img/map1.png" alt="경부선">
+                        <ul class="spot">
+                            <li><a href="#">행신</a></li>
+                            <li class="on1"><a href="#">서울</a></li>
+                            <li><a href="#">영등포</a></li>
+                            <li><a href="#">광명</a></li>
+                            <li><a href="#">수원</a></li>
+                            <li><a href="#">천안아산</a></li>
+                            <li><a href="#">오송</a></li>
+                            <li><a href="#">대전</a></li>
+                            <li><a href="#">김천</a></li>
+                            <li><a href="#">포항</a></li>
+                            <li><a href="#">동대구</a></li>
+                            <li><a href="#">서대구</a></li>
+                            <li><a href="#">신경주</a></li>
+                            <li><a href="#">밀양</a></li>
+                            <li><a href="#">울산</a></li>
+                            <li><a href="#">구포</a></li>
+                            <li class="on2"><a href="#">부산</a></li>
+                        </ul>
+                    </section>
+                    <section class="hns">
+                        <h2><a href="#">호남선</a></h2>
+                        <img src="img/map2.png" alt="호남선">
+                        <ul class="spot">
+                            <li><a href="#">행신</a></li>
+                            <li class="on1"><a href="#">용산</a></li>
+                            <li><a href="#">광명</a></li>
+                            <li><a href="#">천안아산</a></li>
+                            <li><a href="#">오송</a></li>
+                            <li><a href="#">공주</a></li>
+                            <li><a href="#">서대전</a></li>
+                            <li><a href="#">논산</a></li>
+                            <li><a href="#">계룡</a></li>
+                            <li><a href="#">익산</a></li>
+                            <li><a href="#">정읍</a></li>
+                            <li><a href="#">광주송정</a></li>
+                            <li><a href="#">나주</a></li>
+                            <li class="on2"><a href="#">목포</a></li>
+                        </ul>
+                    </section>
+                    <section class="gbs">
+                        <h2><a href="#">경전선</a></h2>
+                        <img src="img/map3.png" alt="경전선">
+                        <ul class="spot">
+                            <li><a href="#">행신</a></li>
+                            <li class="on1"><a href="#">서울</a></li>
+                            <li><a href="#">광명</a></li>
+                            <li><a href="#">천안아산</a></li>
+                            <li><a href="#">오송</a></li>
+                            <li><a href="#">대전</a></li>
+                            <li><a href="#">김천</a></li>
+                            <li><a href="#">동대구</a></li>
+                            <li><a href="#">서대구</a></li>
+                            <li><a href="#">밀양</a></li>
+                            <li><a href="#">창원</a></li>
+                            <li><a href="#">진영</a></li>
+                            <li><a href="#">진주</a></li>
+                            <li><a href="#">마산</a></li>
+                            <li class="on2"><a href="#">창원중앙</a></li>
+                        </ul>
+                    </section>
+                    <section class="gbs">
+                        <h2><a href="#">전라선</a></h2>
+                        <img src="img/map4.png" alt="전라선">
+                        <ul class="spot">
+                            <li><a href="#">행신</a></li>
+                            <li class="on1"><a href="#">용산</a></li>
+                            <li><a href="#">광명</a></li>
+                            <li><a href="#">천안아산</a></li>
+                            <li><a href="#">오송</a></li>
+                            <li><a href="#">공주</a></li>
+                            <li><a href="#">서대전</a></li>
+                            <li><a href="#">논산</a></li>
+                            <li><a href="#">계룡</a></li>
+                            <li><a href="#">익산</a></li>
+                            <li><a href="#">전주</a></li>
+                            <li><a href="#">남원</a></li>
+                            <li><a href="#">곡성</a></li>
+                            <li><a href="#">구례구</a></li>
+                            <li><a href="#">순천</a></li>
+                            <li><a href="#">여천</a></li>
+                            <li class="on2"><a href="#">여수엑스포</a></li>
+                        </ul>
+                    </section>
+                    <section class="gbs">
+                        <h2><a href="#">강릉선</a></h2>
+                        <img src="img/map5.png" alt="강릉선">
+                        <ul class="spot">
+                            <li><a href="#">행신</a></li>
+                            <li class="on1"><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li class="on2"><a href="#"></a></li>
+                        </ul>
+                    </section>
+                    <section class="gbs">
+                        <h2><a href="#">중앙선</a></h2>
+                        <img src="img/map6.png" alt="중앙선">
+                        <ul class="spot">
+                            <li><a href="#">행신</a></li>
+                            <li class="on1"><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li class="on2"><a href="#"></a></li>
+                        </ul>
+                    </section>
+                    <section class="gbs">
+                        <h2><a href="#">중부내륙선</a></h2>
+                        <img src="img/map7.png" alt="중부내륙선">
+                        <ul class="spot">
+                            <li><a href="#">행신</a></li>
+                            <li class="on1"><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li class="on2"><a href="#"></a></li>
+                        </ul>
+                    </section>
+                </div><!-- //.reserv_rt -->
+                <div class="bg"></div>
+            </div><!-- //.reserv -->
+        </div><!-- //.inner -->
+        <div class="map_close">
+            <img src="img/close.png" alt="예약 닫기 버튼">
+        </div>
+        <!-- <article class="ko_inform">
+            <div class="inner">
+                <section class="notice">
+                    <h2>공지사항</h2>
+                    <ul>
+                        <li><a href="#">`24.01.30 승차권 예매 시스템 점검 알림</a></li>
+                        <li><a href="#">고객만족도조사 관련 개인정보 제3자 제공사항 알림</a></li>
+                        <li><a href="#">KTX 환승승차권 발매 일시 중지 안내</a></li>
+                        <li><a href="#">관광벨트열차 승차권 예약·발매일 조정 알림</a></li>
+                        <li><a href="#">2024년 2월 네이버페이 결제 프로모션 알림</a></li>
+                    </ul>
+                </section>
+                <section class="tour">
+                    <h2></h2>
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </section>
+            </div>
+        </article> -->
+        <div class="main_icon">
+            <ul>
+                <li><a href="#"><img src="img/icon1.png" alt="">
+                        <h2>관광열차</h2>
+                    </a></li>
+                <li><a href="#"><img src="img/icon2.png" alt="">
+                        <h2>자유여행</h2>
+                    </a></li>
+                <li><a href="#"><img src="img/icon3.png" alt="">
+                        <h2>여행패스</h2>
+                    </a></li>
+                <li><a href="#"><img src="img/icon4.png" alt="">
+                        <h2>회의실</h2>
+                    </a></li>
+                <li><a href="#"><img src="img/icon5.png" alt="">
+                        <h2>레일텔</h2>
+                    </a></li>
+                <li><a href="#"><img src="img/icon6.png" alt="">
+                        <h2>렌트카</h2>
+                    </a></li>
+            </ul>
+        </div><!-- //.main_icon -->
+        <div class="k_banner">
+            <ul class="slide">
+                <li><img src="img/banner1.jpg" alt="배너1">
+                    <div class="inner">
+                        <h2>
+                            일상에 가까이<br>
+                            코레일과 함께라면
+                        </h2>
+                        <p>2023년 한국철도 베스트 서비스 보기</p>
+                    </div>
+                </li>
+                <li><img src="img/banner2.jpg" alt="배너2">
+                    <div class="inner">
+                        <h2>
+                            바로 지금, 여행<br>
+                            &lt;KTX 매거진>
+                        </h2>
+                        <p>그곳이 궁금할 때, KTX 여행문화 월간지</p>
+                    </div>
+                </li>
+                <li><img src="img/banner3.jpg" alt="배너3">
+                    <div class="inner">
+                        <h2>
+                            여행이 있는 주말<br>
+                            바쁠수록 한번 더
+                        </h2>
+                        <p>이 시각 가장 아름다운 가장 아름다운 명소</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="ltrt_btn">
+                <div class="left_btn"><i class="fa fa-angle-left" aria-hidden="true"></i></div><!-- //.left_btn -->
+                <div class="right_btn"><i class="fa fa-angle-right" aria-hidden="true"></i></div><!-- //.right_btn -->
+            </div><!-- //.ltrt_btn -->
+            <ul class="pager">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+            </ul><!-- //.pager -->
+            <div class="pause_play">
+                <div class="pause"><i class="fa fa-pause" aria-hidden="true"></i></div><!-- //.pause -->
+                <div class="play"><i class="fa fa-play" aria-hidden="true"></i></div><!-- //.play -->
+            </div><!-- //.pause_play -->
+        </div><!-- k_banner -->
+        <div class="train_eco">
+            <h2>탄소배출 감소</h2>
+            <canvas id="myChart"></canvas>
+        </div><!-- //.train_eco -->
+        <div class="train_eco_bg"></div>
+    </main>
+    <footer>
+        <div class="backlogo"></div>
+        <div class="inner">
+            <div class="logo">
+                <h1><a href="#">
+                        <img src="img/logo_b.png" alt="코레일 로고">
+                    </a>
+                </h1>
+            </div><!-- //.logo -->
+            <div class="footer_cont">
+                <span>대표자</span> : 한문희 | <span>주소</span> : 대전광역시 동구 중앙로 240 사업자번호 : 314-82-10024<br>
+                <span>통신판매번호</span> : 대전동구-0233 사업자정보확인<br>
+                <div class="copy_right">
+                    copyright © 2023 Aidenhan, all right reserved
+                </div><!-- //.copy_right -->
+            </div><!-- //.footer_cont -->
+            <div class="sns">
+                <a href="https://www.youtube.com/c/%ED%95%9C%EA%B5%AD%EC%B2%A0%EB%8F%84TV">
+                    <i class="fa-brands fa-youtube" style="color:#ffffff;"></i>
+                </a>
+                <a href="https://www.facebook.com/KoreaRailroad">
+                    <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://www.instagram.com/korail_official_/">
+                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                </a>
+            </div><!-- //.sns_logo -->
+        </div><!-- //.inner -->
+    </footer>
+    <script src="js/chart.js"></script>
+</body>
+
+</html>

@@ -58,6 +58,11 @@ body {
     0%{opacity: 0;}
     100%{opacity: 1;}
 }
+
+@keyframes astro {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
 .textI {
     text-indent: -9999px;
     position: absolute;
@@ -245,15 +250,18 @@ main .typewriter {
     align-items: center;
     justify-content: center;
 }
-
+main .typewriter>img {
+    animation: astro 4s infinite linear;
+    margin-right: 7vw;
+    width: 10vw;
+}
 main .typewriter .container {
     font-family: 'NeoDunggeunmoPro-Regular';
     color: #fff;
     font-size: 2.4vw;
     line-height: 6.4vw;
-    text-align: center;
+    text-align: left;
 }
-
 main .typewriter .container p {
     display: inline-block;
 }
@@ -451,12 +459,12 @@ main .typewriter .container p.typeText {
 
 
 .display .inner .box_g {
-    width: 64vw;
+    width: 72vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     position: absolute;
-    top: 68vw;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -10%);
     z-index: 1;
@@ -468,7 +476,7 @@ main .typewriter .container p.typeText {
     top: 60%;
 }
 .display .inner .box_g h2 {
-    width: 370px;
+    width: 20vw;
     font-family: 'NeoDunggeunmoPro-Regular';
     color: #fff;
     font-size: 4.6vw;
@@ -479,7 +487,7 @@ main .typewriter .container p.typeText {
 
 .display .inner .st_box {
     line-height: 1.5;
-    width: 370px;
+    width: 20vw;
     height: 380px; 
     margin-top: 2vh;
     color: #fff;

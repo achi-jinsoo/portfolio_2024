@@ -275,15 +275,15 @@ header .h_p {
 }
 
 .p_contents .inner {
-  width: 1280px;
+  width: 75vw;
   margin: 0 auto;
+  padding-left: 5%;
   position: relative;
   z-index: 1;
 }
 
 .p_contents .inner h1 {
   position: absolute;
-  left: 4.5%;
   color: #fff;
   font-family: 'NeoDunggeunmoPro-Regular';
   font-weight: normal;
@@ -292,23 +292,23 @@ header .h_p {
 
 .p_contents .inner .line {
   position: absolute;
-  left: 25.5%;
+  left: 29vw;
   top: 3%;
-  width: 170px;
+  width: 8vw;
   border-top: 2px solid #fff;
   box-shadow: 2px 4px 4px #00000050;
 
 }
 
 .p_contents .web {
-  margin-top: 178px;
+  margin-top: 8vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
 .p_contents .web .w_left {
-  width: 624px;
+  width: 32vw;
 }
 
 .p_contents .web .w_left .slide_btn {
@@ -316,7 +316,7 @@ header .h_p {
   margin: 0 auto;
   position: absolute;
   transform: translateX(-50%);
-  left: 50%;
+  left: 45vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -354,7 +354,7 @@ header .h_p {
 
 .p_contents .web .w_left section {
   display: none;
-  margin-top: 188px;
+  margin-top: 10vw;
 }
 
 .p_contents .web .w_left section.on {
@@ -389,7 +389,7 @@ header .h_p {
   color: #fff;
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 24px;
+  margin-bottom: 3vw;
 }
 
 
@@ -457,6 +457,7 @@ header .h_p {
 
 .p_contents .web .w_left .burger img {
   position: absolute;
+  margin-bottom: 8vw;
   left: 35%;
   z-index: 1;
   animation: burger 0.6s ease-in infinite alternate;

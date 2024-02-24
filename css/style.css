@@ -472,8 +472,9 @@ main .typewriter .container p.typeText {
 
 .display .inner .box_g .star_st {
     position: absolute;
-    left: 0;
-    top: 60%;
+    transform: rotate(90deg);
+    left: 80%;
+    top: -10%;
 }
 .display .inner .box_g h2 {
     width: 20vw;

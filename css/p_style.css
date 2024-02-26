@@ -292,7 +292,7 @@ header .h_p {
 
 .p_contents .inner .line {
   position: absolute;
-  left: 29vw;
+  left: 22vw;
   top: 3%;
   width: 8vw;
   border-top: 2px solid #fff;
@@ -316,7 +316,7 @@ header .h_p {
   margin: 0 auto;
   position: absolute;
   transform: translateX(-50%);
-  left: 45vw;
+  left: 38vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -354,7 +354,7 @@ header .h_p {
 
 .p_contents .web .w_left section {
   display: none;
-  margin-top: 10vw;
+  margin-top: 8vw;
 }
 
 .p_contents .web .w_left section.on {
@@ -490,7 +490,7 @@ header .h_p {
 
 }
 .p_contents .mobile {
-  margin-top: 326px;
+  margin-top: 15vw;
   background: #D88A3D;
   padding-bottom: 120px;
 }
@@ -557,7 +557,7 @@ header .h_p {
   cursor: pointer;
 }
 
-.p_contents .mobile .m_right .more_btn .btn:active {
+.p_contents .mobile .m_right .more_btn .btn a:active {
   box-shadow:
     -4px 2px 1px 1px lightgrey,
     -4px -2px 1px 1px grey,
@@ -565,7 +565,7 @@ header .h_p {
   background-color: #2d0636;
 }
 
-.p_contents .mobile .m_right .more_btn .btn::after {
+.p_contents .mobile .m_right .more_btn .btn a::after {
   content: '';
   background: black;
   position: absolute;
@@ -576,7 +576,7 @@ header .h_p {
   z-index: -1;
 }
 
-.p_contents .mobile .m_right .more_btn .btn::before {
+.p_contents .mobile .m_right .more_btn .btn a::before {
   content: '';
   background: black;
   position: absolute;

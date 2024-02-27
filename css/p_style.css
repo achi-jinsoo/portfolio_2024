@@ -5,7 +5,7 @@ body {
 
 @keyframes burger {
   0% {
-    bottom: -32%;
+    bottom: -14vw;
   }
 
   80% {
@@ -19,7 +19,7 @@ body {
   }
 
   to {
-    bottom: -48%;
+    bottom: -18vw;
     width: 140px;
     height: 70px;
   }
@@ -283,7 +283,7 @@ header .h_p {
 }
 
 .p_contents .inner h1 {
-  position: absolute;
+  font-size: 2.2vw;
   color: #fff;
   font-family: 'NeoDunggeunmoPro-Regular';
   font-weight: normal;
@@ -293,15 +293,18 @@ header .h_p {
 .p_contents .inner .line {
   position: absolute;
   left: 22vw;
-  top: 3%;
   width: 8vw;
   border-top: 2px solid #fff;
   box-shadow: 2px 4px 4px #00000050;
 
 }
-
-.p_contents .web {
+.p_contents .inner .cont_top {
   margin-top: 8vw;
+  width: 54vw;
+  display: flex;
+  align-items: center;
+}
+.p_contents .web {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -311,18 +314,17 @@ header .h_p {
   width: 32vw;
 }
 
-.p_contents .web .w_left .slide_btn {
-  width: 20%;
+.p_contents .slide_btn {
+  width: 8.6vw;
   margin: 0 auto;
-  position: absolute;
   transform: translateX(-50%);
-  left: 38vw;
+  left: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.p_contents .web .w_left .slide_btn div {
+.p_contents .slide_btn div {
   width: 20px;
   height: 20px;
   background: #fff;
@@ -338,14 +340,14 @@ header .h_p {
 
 }
 
-.p_contents .web .w_left .slide_btn div:hover {
+.p_contents .slide_btn div:hover {
   font-size: 24px;
   width: 32px;
   height: 32px;
   line-height: 34px;
 }
 
-.p_contents .web .w_left .slide_btn .on {
+.p_contents .slide_btn .on {
   font-size: 24px;
   width: 32px;
   height: 32px;
@@ -354,7 +356,7 @@ header .h_p {
 
 .p_contents .web .w_left section {
   display: none;
-  margin-top: 8vw;
+  margin-top: 7vw;
 }
 
 .p_contents .web .w_left section.on {
@@ -384,11 +386,11 @@ header .h_p {
 }
 
 .p_contents .web .w_left .bottom {
-  width: 410px;
+  width: 28vw;
   font-family: 'NeoDunggeunmoPro-Regular';
   color: #fff;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
   margin-bottom: 3vw;
 }
 
@@ -593,6 +595,7 @@ header .h_p {
   padding: 1em;
   position: relative;
   margin-top: 112px;
+  margin-right: 10vw;
 }
 
 @media screen and (min-width: 38em) {

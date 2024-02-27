@@ -33,7 +33,7 @@ $(function () {
         $(this).parent().parent('header').toggleClass('on');
     });
     //프로젝트 버튼 클릭
-    $('.p_contents .web .w_left .slide_btn div').click(function () {
+    $('.p_contents .slide_btn div').click(function () {
         $(this).toggleClass('on').siblings().removeClass('on');
         let idx = $(this).index();
         $('.p_contents .web .w_left section').eq(idx).addClass('on').siblings().removeClass('on');

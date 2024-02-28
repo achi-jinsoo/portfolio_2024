@@ -1,0 +1,820 @@
+/* 기초 CSS 디자인 */
+
+  .hidden {
+    display:none;
+    visibility:hidden;
+  }
+  
+  /* 본문 디자인 */
+  .about_wrap {
+    display:block;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:transparent;}
+  /* 버튼으로 사용할 라벨 디자인 */
+  .button {
+    cursor:pointer;
+  }
+  /*reser modal page*/   
+  .box_modal_0 {
+    z-index: 50;
+    position:absolute;
+    left: 0; bottom: 0;
+    width:100vw;
+    height:100vh;
+    background:#fff;
+    overflow: hidden;
+    /* 아래 부분은 애니메이션 효과를 위한 부분 */
+    -webkit-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+    -webkit-transform: translateX(-2000px);
+    -ms-transform: translateX(-2000px);
+    transform: translateX(-2000px);
+  }
+.closer_0 {
+position:absolute;
+top: 10%;
+left: 24vw;
+text-align:center;
+line-height:26px;
+font-size:16x;
+cursor:pointer;
+transition: all ease 0.3s;
+}
+.closer_0:hover {
+  opacity: 0.5;
+}
+.reser_click_in {z-index: 500;
+                 position: absolute;
+                 top: 20%;
+                 left: 7.2%;}
+.reser_click {margin-top: 45px;}
+.reser_title_s {z-index: 1001;
+                font-family: 'Montserrat', sans-serif; 
+                font-weight: 500; 
+                font-size: 24px;
+                position: absolute;
+                top: 10%;
+                left: 7.4vw;}
+.reser_title_l {z-index: 1001;
+                font-family: 'Montserrat', sans-serif; 
+                font-weight: 700; 
+                font-size: 46px;
+                position: absolute;
+                top: 27.5%;
+                left: 19%;}
+.month_day {z-index: 1002;
+            position: absolute;
+            top: 39%;
+            left: 19%;
+            display: flex;}
+.month_day div {cursor: pointer;
+                transition: all ease 0.5s;}
+.month_day1 {border: 1px solid rgba(0, 0, 0, 0.205);
+             border-radius: 50px;
+             margin-right: 15px;
+             padding: 5px 7px;}
+.month_day1:hover {background-color: #292929;
+                   color: #fff}
+.month_day2 {border: 1px solid rgba(0, 0, 0, 0.205);
+             border-radius: 50px;
+             margin-right: 15px;
+             padding: 5px 7px;}
+.month_day2:hover {background-color: #292929;
+                   color: #fff} 
+.month_day3 {border: 1px solid rgba(0, 0, 0, 0.205);
+             border-radius: 50px;
+             margin-right: 15px;
+             padding: 5px 7px;}
+.month_day3:hover {background-color: #292929;
+                   color: #fff} 
+.month_day4 {border: 1px solid rgba(0, 0, 0, 0.205);
+             border-radius: 50px;
+             margin-right: 15px;
+             padding: 5px 7px;}
+.month_day4:hover {background-color: #292929;
+                   color: #fff}              
+.month_day5 {border: 1px solid rgba(0, 0, 0, 0.205);
+             border-radius: 50px;
+             margin-right: 15px;
+             padding: 5px 7px;}
+.month_day5:hover {background-color: #292929;
+                   color: #fff} 
+.Apr_7th_top {z-index: 1001;
+              display: flex;
+              position: absolute;
+              top: 45.5%;
+              left: 19.4%;}
+.Apr_7th_top td {margin-right: 3px;}
+.Apr_7th_wd {cursor: pointer;
+             padding-right: 15px;
+             transition: all ease 0.2s;}
+.Apr_7th_wd:hover {color: #a1a1a1;}
+.Apr_7th_md {cursor: pointer;
+             transition: all ease 0.2s;}
+.Apr_7th_md:hover {color: #a1a1a1;}
+.welcome_drink {z-index: 1002;
+               position: absolute;
+               top: 45.7%;
+               left: 25%;
+               font-family: 'S-CoreDream-2ExtraLight';
+               font-weight: normal;
+               font-style: normal;
+               font-size: 12px;
+               color: #eec254;}
+.month_day_line {z-index: 1001;
+                 position: absolute;
+                 top: 47.25%;
+                 left: 19.4%;}
+.Apr_7th_md {padding-right: 15px;}
+.Apr_7th_bottom1 {
+                 z-index: 1001;
+                 display: flex;
+                 position: absolute;
+                 top: 50%;
+                 left: 19.4%;}
+.Apr_7th_bottom1 td {margin-right: 1.5px;}
+.Apr_7th_bottom2 {
+                 z-index: 1001;
+                 display: flex;
+                 position: absolute;
+                 top: 55%;
+                 left: 19.4%;}
+.Apr_7th_bottom2 td {margin-right: 2px;}
+.Apr_7th_bottom3 {
+                 z-index: 1001;
+                 display: flex;
+                 position: absolute;
+                 top: 60%;
+                 left: 19.4%;}
+.Apr_7th_bottom4 {
+                 z-index: 1001;
+                 display: flex;
+                 position: absolute;
+                 top: 65%;
+                 left: 19.4%;}
+.caution {z-index: 1002;
+          position: absolute;
+          top: 71%;
+          left: 19.4%;
+          font-family: 'S-CoreDream-2ExtraLight';
+          font-weight: normal;
+          font-style: normal;
+          font-size: 12px;
+          color: #f00000;}
+.reser_info_box  {z-index: 1005;
+                  position: absolute;
+                  top: 39%;
+                  left: 55%;
+                  float: right;
+                  width: 448px;
+                  height: 300px;
+                  border: 1px solid black;
+                  border-radius: 30px;
+                  background: #ffffff;
+                  box-shadow:  8px 8px 17px #dfdfdf,
+                              -11px -11px 21px #ffffff;}
+.reser_info_title {font-family: 'Montserrat', sans-serif; 
+                   font-weight: 700; 
+                   font-size: 24px;
+                   position: absolute;
+                   top: 10%;
+                   left: -0.3%;
+                   width: 447px;
+                   border-bottom: 1px solid #77766e;
+                   padding-bottom: 15px;}
+.reser_box1 {position: absolute;
+             top: 35%;
+             left: 8%;
+             border-bottom: 1px solid #77766e;
+             }
+.reser_box1 textarea {width: 275px;}
+.reser_box2 {position: absolute;
+             top: 50%;
+             left: 8%;
+             border-bottom: 1px solid #77766e;
+             }
+.reser_box2 textarea {width: 310px;}
+.reser_box3 {position: absolute;
+             top: 65%;
+             left: 8%;
+             border-bottom: 1px solid #77766e;
+             }
+.reser_box3 textarea {width: 308px;}
+.send_btn1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; 
+  font-size: 14px;
+  position: absolute;
+  bottom: 7%;
+  right: 6%;
+  background-color: #ffd159;
+  padding: 8px 30px;
+  text-align: center;
+  border: 0px !important;
+  border-radius: 30px;
+  cursor: pointer;}
+input#modal0[type=checkbox]:checked ~ .box_modal_0 {
+visibility: visible;
+-webkit-transform: translateY(0px);
+-ms-transform: translateY(0px);
+transform: translateY(0px);
+}
+/*prolong service*/
+.prolong {z-index: 1050;
+  position: absolute;
+  bottom: 0;
+  left: 2.4vw;}
+.prolong_title_s {font-family: 'Montserrat', sans-serif; 
+                  font-weight: 500; 
+                  font-size: 24px;
+                  position: absolute;
+                  bottom: 45%;
+                  left: 9%;}
+.modal_closer {position: absolute;
+               bottom: 47%;
+               left: 25.5%;
+               cursor: pointer;
+               transition: all ease 0.3s;}
+.modal_closer:hover {opacity: 0.4;}
+.mini_logo {z-index: 1005;
+    position: absolute;
+    bottom: 8%;
+    right: 15%;}
+.box_modal_0_1 {
+  z-index: 1050;
+  position:absolute;
+  width:1920px;
+  height:850px;
+  bottom: 20px;
+  left: 0px;
+  background:transparent;
+  overflow: hidden;
+  /* 아래 부분은 애니메이션 효과를 위한 부분 */
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-transform: translateY(2000px);
+  -ms-transform: translateY(2000px);
+  transform: translateY(2000px);
+}
+.closer_0_1 {
+  position:absolute;
+  top: 12%;
+  left: 30%;
+  text-align:center;
+  line-height:26px;
+  font-size:16x;
+  cursor:pointer;
+  transition: all ease 0.3s;
+  }
+.closer_0_1:hover {
+    opacity: 0.5;
+  }
+.reser_click_in_1 {z-index: 500;
+                   position: absolute;
+                   top: 20%;
+                   left: 13%;}
+.reser_click_1 {margin-top: 45px;}
+.prolong_title_s_1 {z-index: 1051;
+                    font-family: 'Montserrat', sans-serif; 
+                    font-weight: 500; 
+                    font-size: 24px;
+                    position: absolute;
+                    top: 11.7%;
+                    left: 15.5%;}
+.prolong_title_l_1 {z-index: 1055;
+                    font-family: 'Montserrat', sans-serif; 
+                    font-weight: 700; 
+                    font-size: 48px;
+                    position: absolute;
+                    top: 28.7%;
+                    left: 18.5%;}
+.reser_info_box_1  {z-index: 1051;
+                      position: absolute;
+                      top: 45%;
+                      left: 22.5%;
+                      float: right;
+                      width: 448px;
+                      height: 300px;
+                      border: 1px solid black;
+                      border-radius: 30px;
+                      background: #ffffff;
+                      box-shadow:  8px 8px 17px #dfdfdf,
+                                  -11px -11px 21px #ffffff;}
+
+.reser_info_title_1 {font-family: 'Montserrat', sans-serif; 
+                   font-weight: 700; 
+                   font-size: 24px;
+                   position: absolute;
+                   top: 10%;
+                   left: -0.3%;
+                   width: 447px;
+                   border-bottom: 1px solid #77766e;
+                   padding-bottom: 15px;}
+.reser_box1_1 {position: absolute;
+                 top: 35%;
+                 left: 8%;
+                 border-bottom: 1px solid #77766e;
+                 }
+.reser_box1_1 textarea {width: 275px;
+                        color: #77766e;
+                        font-size: 18px !important;
+                        margin-left: 15px;}
+.reser_box1_2 {position: absolute;
+                 top: 50%;
+                 left: 8%;
+                 border-bottom: 1px solid #77766e;
+                 }
+.reser_box1_2 textarea {width: 310px;
+                        color: #77766e;
+                        font-size: 18px !important;
+                        margin-left: 15px;}
+.reser_box1_3 {position: absolute;
+                 top: 65%;
+                 left: 8%;
+                 border-bottom: 1px solid #77766e;
+                 }
+.reser_box1_3 textarea {width: 308px;
+                        color: #77766e;
+                        font-size: 18px !important;
+                        margin-left: 15px;}
+.reser_between {z-index: 1052;
+                position: absolute;
+                top: 57%;
+                left: 48.4%;}
+.reser_info_box_2  {z-index: 1051;
+                      position: absolute;
+                      top: 45%;
+                      left: 54%;
+                      float: right;
+                      width: 448px;
+                      height: 300px;
+                      border: 1px solid black;
+                      border-radius: 30px;
+                      background: #ffffff;
+                      box-shadow:  8px 8px 17px #dfdfdf,
+                                  -11px -11px 21px #ffffff;}
+
+.reser_info_title_2 {font-family: 'Montserrat', sans-serif; 
+                   font-weight: 700; 
+                   font-size: 24px;
+                   position: absolute;
+                   top: 10%;
+                   left: -0.3%;
+                   width: 447px;
+                   border-bottom: 1px solid #77766e;
+                   padding-bottom: 15px;}
+.reser_box2_1 {position: absolute;
+                 top: 35%;
+                 left: 8%;
+                 border-bottom: 1px solid #77766e;
+                 }
+.reser_box2_1 textarea {width: 275px;}
+.reser_box2_2 {position: absolute;
+                 top: 50%;
+                 left: 8%;
+                 border-bottom: 1px solid #77766e;
+                 }
+.reser_box2_2 textarea {width: 310px;}
+.reser_box2_3 {position: absolute;
+                 top: 65%;
+                 left: 8%;
+                 border-bottom: 1px solid #77766e;
+                 }
+.reser_box2_3 textarea {width: 308px;}
+.send_btn2_1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700; 
+      font-size: 14px;
+      position: absolute;
+      bottom: 7%;
+      right: 6%;
+      background-color: #ffd159;
+      padding: 8px 30px;
+      text-align: center;
+      border: 0px !important;
+      border-radius: 30px;
+      cursor: pointer;}
+.mini_logo_1 {z-index: 1005;
+              position: absolute;
+              bottom: 8%;
+              right: 15%;}
+input#modal0_1[type=checkbox]:checked ~ .box_modal_0_1 {
+visibility: visible;
+-webkit-transform: translateY(0px);
+-ms-transform: translateY(0px);
+transform: translateY(0px);
+}
+  /* 모달 윈도우 디자인 */
+  .box_modal_1 {
+    z-index: 1000;
+    position:absolute;
+    width:100%;
+    height:100%;
+    bottom: 0;
+    left: 0;
+    background:#ffffff;
+    overflow:hidden;
+    /* 아래 부분은 애니메이션 효과를 위한 부분 */
+    visibility: hidden;
+    -webkit-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+    -webkit-transform: translateY(1000px);
+    -ms-transform: translateY(1000px);
+    transform: translateY(1000px);
+  }
+
+  
+  /* 닫기 버튼으로 사용할 라벨 */
+  .closer_1 {
+    position:absolute;
+    top:3%;
+    right:2%;
+    text-align:center;
+    line-height:26px;
+    font-size:16x;
+    cursor:pointer;
+    transition: all ease 0.3s;
+  }
+  .closer_1:hover {
+    opacity: 0.5;
+  }
+  .text_1 {
+    display:inline-block;
+    margin-top: 80px;
+    margin-left: 120px;
+  }
+  .text_1 h1 {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 600; 
+    font-size: 56px;
+    color: #77766e;
+    margin:0;
+  }
+  .text_1 p {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 200; 
+    font-size: 20px;
+  }
+  .text_1 p span {color: #ffd159;}
+  .hf1 {position: absolute;
+        top: 40.5%;
+        left: 51.9%;}
+  .dime {position: absolute;
+         top: 88%;
+         left: 6.2%;}
+  .modal_cont {position: absolute;
+               top: 41%;
+               left: 66%;
+               font-family: 'S-CoreDream-2ExtraLight';
+               font-weight: normal;
+               font-style: normal;
+               font-size: 56px;
+               text-align: center;}
+  .modal_contp {position: absolute;
+                font-family: 'S-CoreDream-2ExtraLight';
+                font-weight: normal;
+                font-style: normal;
+                font-size: 20px;
+                top: 51%;
+                left: 68%;
+                text-align: center;}
+  .infinite_1 {z-index: 10;
+    cursor: pointer;
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    -webkit-animation: rotation 6s infinite linear reverse;
+     transition: all ease 0.5s;}
+
+@-webkit-keyframes rotation {
+            from {-webkit-transform: rotate(0deg);}
+            to   {-webkit-transform: rotate(359deg);}}
+
+  .modal_img1 {padding-left: 120px;}
+  .modal_img2 {position: absolute;
+               top: 10%;
+               left: 33.3%;}
+  .modal_img3 {position: absolute;
+               top: 40.6%;
+               left: 33.3%;}
+  .modal_line {position: absolute;
+               top: 10%;
+               left: 48.6%;}
+
+  /* 모달 윈도우가 팝업되는 코어 소스 */
+  input#modal[type=checkbox]:checked ~ .box_modal_1 {
+    visibility: visible;
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  /*NEWS*/
+  .news_wrap {
+    display:block;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:transparent;}
+
+    .box_modal_2 {
+      z-index: 1000;
+      position:absolute;
+      width:1920px;
+      height:970px;
+      bottom: -49.8%;
+      left: -15.8%;
+      background:#ffffff;
+      display: inline-block;
+      padding-top: 120px;
+      padding-left: 200px;
+      /* 아래 부분은 애니메이션 효과를 위한 부분 */
+      visibility: hidden;
+      -webkit-transition: all .7s ease-in-out;
+      transition: all .7s ease-in-out;
+      -webkit-transform: translateY(1000px);
+      -ms-transform: translateY(1000px);
+      transform: translateY(1000px);
+    }
+
+    .nr_modal_title {z-index: 1001;
+                     font-family: 'Montserrat', sans-serif; 
+                     font-weight: 700; 
+                     font-size: 56px;
+                     position: absolute;
+                     top: 6%;
+                     right: 9.3%;
+                  }
+    .nr_modal_logo {font-family: 'Montserrat', sans-serif; 
+                    font-weight: 200; 
+                    font-size: 40px;
+                    position: absolute;
+                    top: 45.5%;
+                    left: 10.4%;}
+    .nr_modal_parking {font-family: 'Montserrat', sans-serif; 
+                       font-weight: 700; 
+                       font-size: 80px;
+                       position: absolute;
+                       top: 48%;
+                       left: 10%;}
+    .nr_park_cont      {font-family: 'S-CoreDream-2ExtraLight';
+                        font-weight: normal;
+                        font-style: normal;
+                        font-size: 18px;
+                        position: absolute;
+                        top: 63%;
+                        left: 10.4%;}
+    .nr_point1 {position: absolute;
+                top: 63%;
+                left: 17.5%;}
+    .nr_point2 {position: absolute;
+                top: 65.5%;
+                left: 17.5%;}
+    .nr_rec1 {position: absolute;
+              top: 63%;
+              left: 23%;}
+    .nr_rec2 {position: absolute;
+              top: 65.5%;
+              left: 23%;}
+    .nr_left_footer {font-family: 'S-CoreDream-2ExtraLight';
+                font-weight: normal;
+                font-style: normal;
+                font-size: 12px;
+                position: absolute;
+                top: 80%;
+                left: 10.5%;}
+    .nr_right_footer {font-family: 'S-CoreDream-2ExtraLight';
+                font-weight: normal;
+                font-style: normal;
+                font-size: 16px;
+                position: absolute;
+                top: 72%;
+                right: 13.3%;
+                color: #727272;}
+    .nr_right_footer span {
+      font-family: 'S-CoreDream-6Bold';
+      font-weight: normal;
+      font-style: normal;}
+    .nr_img2 {margin-left: 280px;}
+    .nr_img3 {position: absolute;
+              top: 12.4%;
+              left: 60.7%;}
+    .red {color: red;}
+    .closer_2 {
+      position:absolute;
+      top:3%;
+      right:2%;
+      text-align:center;
+      line-height:26px;
+      font-size:16x;
+      cursor:pointer;
+      transition: all ease 0.3s;
+    }
+    .closer_2:hover {
+      opacity: 0.5;}
+
+      input#modal2[type=checkbox]:checked ~ .box_modal_2 {
+        visibility: visible;
+        -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        transform: translateY(0px);
+      }    
+
+      .box_modal_3 {
+        position:absolute;
+        width:100%;
+        height:100%;
+        bottom: 0;
+        left: 0;
+        background:#ffffff;
+        display: inline-block;
+        padding-top: 120px;
+        padding-left: 200px;
+        /* 아래 부분은 애니메이션 효과를 위한 부분 */
+        visibility: hidden;
+        -webkit-transition: all .7s ease-in-out;
+        transition: all .7s ease-in-out;
+        -webkit-transform: translateY(1000px);
+        -ms-transform: translateY(1000px);
+        transform: translateY(1000px);
+      }
+      .closer_3 {z-index: 1050;
+        position:absolute;
+        top: 5%;
+        right: 2.5%;
+        line-height:26px;
+        font-size:16x;
+        cursor:pointer;
+        transition: all ease 0.3s;
+        }
+      .click_next {position: absolute;
+                   top: 47%;
+                   right: 5%;}
+      .click_1-1 {text-align: center;
+                  margin-top: 30px;}
+      .gl_click {position: absolute;
+                 bottom: 17.2%;
+                 left: 45%;
+                 width: 650px;
+                 background-color: rgba(255, 255, 255, 0.8);}
+      .click_title {font-family: 'Montserrat', sans-serif; 
+                    font-weight: 700; 
+                    font-size: 48px;}
+      .click_cont {font-family: 'Montserrat', sans-serif; 
+                   font-weight: 300; 
+                   font-size: 18px;}              
+      .click_cont_span {font-family: 'Montserrat', sans-serif; 
+                        font-weight: 300; 
+                        font-size: 22px;
+                        color: #ffd159;
+                        margin-top: 4px;}    
+      .click_cont2 {z-index: 1055;
+                    position: absolute;
+                    top: 13.5%;
+                    left: 28%;
+                    font-family: 'Montserrat', sans-serif; 
+                    font-weight: 300; 
+                    font-size: 12px;
+                    color: #444442;}          
+      input#modal3[type=checkbox]:checked ~ .box_modal_3 {
+        visibility: visible;
+        -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        transform: translateY(0px);
+      }    
+
+      .box_modal_4 {
+        position:absolute;
+        width:100%;
+        height:100%;
+        bottom: 0;
+        left: 0;
+        background:#ffffff;
+        display: inline-block;
+        padding-top: 120px;
+        padding-left: 200px;
+        /* 아래 부분은 애니메이션 효과를 위한 부분 */
+        visibility: hidden;
+        -webkit-transition: all .7s ease-in-out;
+        transition: all .7s ease-in-out;
+        -webkit-transform: translateY(1000px);
+        -ms-transform: translateY(1000px);
+        transform: translateY(1000px);
+      }
+      .closer_4 {z-index: 1050;
+        position:absolute;
+        top: 5%;
+        right: 2.5%;
+        line-height:26px;
+        font-size:16x;
+        cursor:pointer;
+        transition: all ease 0.3s;
+        }
+      .gl_click2 {position: absolute;
+                  bottom: 15%;
+                  left: 38.5%;}
+      .click2_title {font-family: 'Montserrat', sans-serif; 
+                     font-weight: 700; 
+                     font-size: 48px;
+                     margin-left: -2px;}
+      .click2_cont  {font-family: 'Montserrat', sans-serif; 
+                     font-weight: 300; 
+                     font-size: 18px;}
+      .click2_cont_span  {font-family: 'Montserrat', sans-serif; 
+                          font-weight: 300; 
+                          font-size: 22px;
+                          color: #ffd159;
+                          margin-top: 4px;}
+      .click2_cont2 {z-index: 1055;
+                     position: absolute;
+                     bottom: 51%;
+                     right: 18.9%;
+                     font-family: 'Montserrat', sans-serif; 
+                     font-weight: 300; 
+                     font-size: 12px;
+                     color: #444442;}
+      .click2-1 {
+        position: absolute;
+        top: 8.5%;
+        left: 18%;
+      }
+      .click2-2 {
+        position: absolute;
+        top: 8.5%;
+        left: 38.83%;
+      }
+      .click2-3 {
+        position: absolute;
+        top: 49.55%;
+        left: 18%;
+      }
+      .click2-4 {
+        position: absolute;
+        top: 49.55%;
+        left: 59.65%;
+      }
+      input#modal4[type=checkbox]:checked ~ .box_modal_4 {
+        visibility: visible;
+        -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        transform: translateY(0px);
+      }  
+      .box_modal_5 {
+        position:absolute;
+        width:100%;
+        height:100%;
+        bottom: 0;
+        left: 0;
+        background:#ffffff;
+        display: inline-block;
+        padding-top: 120px;
+        padding-left: 200px;
+        /* 아래 부분은 애니메이션 효과를 위한 부분 */
+        visibility: hidden;
+        -webkit-transition: all .7s ease-in-out;
+        transition: all .7s ease-in-out;
+        -webkit-transform: translateY(1000px);
+        -ms-transform: translateY(1000px);
+        transform: translateY(1000px);
+      }
+      .closer_5 {z-index: 1050;
+        position:absolute;
+        top: 5%;
+        right: 2.5%;
+        line-height:26px;
+        font-size:16x;
+        cursor:pointer;
+        transition: all ease 0.3s;
+        }
+      .gl_click3 {position: absolute;
+                  bottom: 12%;
+                  left: 31.8%;}
+      .click3_title {font-family: 'Montserrat', sans-serif; 
+                     font-weight: 700; 
+                     font-size: 48px;
+                     margin-left: -2px;}
+      .click3_title_cont {font-family: 'Montserrat', sans-serif; 
+                          font-weight: 300; 
+                          font-size: 18px;}
+      .gl_click3_2 {position: absolute;
+                  bottom: 17%;
+                  right: 14.8%;}
+      .click3_cont {font-family: 'Montserrat', sans-serif; 
+                    font-weight: 300; 
+                    font-size: 18px;}
+      .click3_cont_span {font-family: 'Montserrat', sans-serif; 
+                         font-weight: 300; 
+                         font-size: 22px;
+                         color: #ffd159;
+                         margin-top: 16px;}
+      .click3 {text-align: center;
+               margin-top: -30px;}
+      input#modal5[type=checkbox]:checked ~ .box_modal_5 {
+        visibility: visible;
+        -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        transform: translateX(0px);
+      }    

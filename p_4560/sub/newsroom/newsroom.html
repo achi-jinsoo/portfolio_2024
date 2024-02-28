@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4560 DESIGN HAUS</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Demo styles -->
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div class="nr_left_top">
+                4560designhaus<br>
+                @2021
+            </div>
+        </header>
+        <div class="nr_title"><br><br><br><br>
+            <div class="nr_title_cont">NEWSROOM</div>
+            <div class="nr_point"><img src="images/point.png"></div>
+        </div>
+        <div class="nr_logo"><img src="images/big_logo.png"></div>
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#"><img src="images/article_2.png"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/article_1.png"></a></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                freeMode: true,
+                
+            });
+        </script>
+        <div class="nr_menu_tab">
+            <ul class="nr_menu_tab_title">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">NEWSROOM</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

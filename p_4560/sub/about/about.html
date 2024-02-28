@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4560 DESIGN HAUS</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Demo styles -->
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div class="left_top">
+                4560designhaus<br>
+                @2021
+            </div>
+        </header>
+        <div class="about_title"><br><br><br><br>
+            <div class="about_title_cont">ABOUT</div>
+            <div class="point"><img src="images/point.png"></div>
+        </div>
+        <div class="main_visual">
+            <div class="share_the"><img src="images/share.jpg"></div>
+            <div class="share_the_bottom">기분 좋은 설렘과 경험을 나눕니다.</div>
+        </div>
+        <div class="logo"><img src="images/big_logo.png"></div>
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#"><img src="images/about_1.png"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/about_2.png"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/about_3.png"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/about_4.png"></a></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 3,
+                spaceBetween: 50,
+                freeMode: true,
+                
+            });
+        </script>
+        <div class="menu_tab">
+            <ul class="menu_tab_title">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">NEWSROOM</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

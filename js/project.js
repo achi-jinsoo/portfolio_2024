@@ -43,8 +43,8 @@ $(function () {
     $(window).scroll(function () {
         let st = $(this).scrollTop(); //스크롤 탑 위치를 st에 저장
         //console.log(st);
-        let cloudMove = $('.qck_gbook').offset().top-200; //이벤트가 스크롤 될 위치를 evTop에 저장
-    
+        let cloudMove = $('.qck_gbook').offset().top - 200; //이벤트가 스크롤 될 위치를 evTop에 저장
+        let cloudMove2 = $('main').offset().top;
         //이벤트 컨텐츠 액션 시작
         if (st >= cloudMove) {
           $('.cloud1').addClass('on');
@@ -54,6 +54,15 @@ $(function () {
           $('.cloud2').removeClass('on');
         }
         //이벤트 컨텐츠 액션 끝
-      });
+        //이벤트 컨텐츠 액션 시작
+        if (st >= cloudMove2) {
+            $('.cloud1').addClass('on');
+            $('.cloud2').addClass('on');
+        } else {
+            $('p_contents .cloud1').removeClass('on');
+            $('p_contents .cloud2').removeClass('on');
+        }
+        //이벤트 컨텐츠 액션 끝
+    });
     /* 스크롤 이벤트 끝 */
 });

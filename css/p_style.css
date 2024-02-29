@@ -24,7 +24,15 @@ body {
     height: 70px;
   }
 }
+@keyframes train {
+  0% {
+    left: -160%;
+  }
 
+  100% {
+    left: 280%;
+  }
+}
 @keyframes cloud1 {
   0% {
     transform: translateX(0);
@@ -277,7 +285,8 @@ header .h_p {
 .p_contents .inner {
   width: 75vw;
   margin: 0 auto;
-  padding-left: 5%;
+  padding-left: 7%;
+  padding-bottom: 15vw;
   position: relative;
   z-index: 1;
 }
@@ -292,8 +301,8 @@ header .h_p {
 
 .p_contents .inner .line {
   position: absolute;
-  left: 22vw;
-  width: 8vw;
+  left: 23vw;
+  width: 10vw;
   border-top: 2px solid #fff;
   box-shadow: 2px 4px 4px #00000050;
 
@@ -357,6 +366,7 @@ header .h_p {
 .p_contents .web .w_left section {
   display: none;
   margin-top: 7vw;
+  position: relative;
 }
 
 .p_contents .web .w_left section.on {
@@ -473,9 +483,11 @@ header .h_p {
 
 .p_contents .web .w_left .train img {
   position: absolute;
+  height: 4vw;
   left: 35%;
+  bottom: -52%;
   z-index: 1;
-  animation: burger 0.6s ease-in infinite alternate;
+  animation: train 6s linear infinite;
 }
 
 .p_contents .web .w_right section {
@@ -492,7 +504,7 @@ header .h_p {
 
 }
 .p_contents .mobile {
-  margin-top: 15vw;
+  margin-top: 4vw;
   background: #D88A3D;
   padding-bottom: 120px;
 }
@@ -510,9 +522,15 @@ header .h_p {
 .p_contents .mobile .m_left img {
   width: 32vw;
 }
+.p_contents .mobile .m_right {
+  text-align: right;
+}
+.p_contents .mobile .m_right>h1 {
+  margin-bottom: 7vw;
+}
+.p_contents .mobile .m_right .line {
 
-.p_contents .mobile .m_right {}
-
+}
 .p_contents .mobile .m_right .top {
   font-family: 'DOSMyungjo';
   color: #fff;

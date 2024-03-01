@@ -50,10 +50,9 @@ body{
   
 #loader ul li {
     position: absolute;
-    width: 10px;
+    width: 16px;
     height: 0;
-    border-radius: 10px;
-    background-color: #e8b21e90;
+    background-color: #ffffff50;
     bottom: 0;
   }
 #loader ul:last-child > li {
@@ -246,7 +245,6 @@ display: flex; justify-content: space-between;}
 .wrap>#circle .face4 .inner>div p{
     font: 16px/1.3 'arial';
     color: #bbb;
-    margin-top: 20px;
 }
 .wrap>#circle .face4 .inner>div:nth-of-type(1){
     width: 100%;
@@ -271,7 +269,7 @@ display: flex; justify-content: space-between;}
 
 }
 .wrap>#circle .face4 .inner>div:nth-of-type(2) em{
-    font-size: 12px; color: #ccc; margin-top: 23px;
+    font-size: 12px; color: #ccc; 
 }
 
 /* face5 */
@@ -352,8 +350,17 @@ display: flex; justify-content: space-between;}
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.wrap>#circle .face8 .inner p {
+    font-size: 4px;
+}
+.wrap>#circle .face8 .inner p span {
+    font:bold 20px/2 'Orbitron', sans-serif;
+}
 .wrap>#circle .face8 .inner>div:nth-of-type(1){
     width: 100%; height: 400px; margin-bottom: 20px;
+    background-image: url(../img/balming_member.jpeg);
+    background-position: center bottom;
+    background-size: cover;
 }
 .wrap>#circle .face8 .inner>div:nth-of-type(1) i{
     color: #fff; font-size: 200px;
@@ -371,6 +378,7 @@ display: flex; justify-content: space-between;}
 }
 .wrap>#circle .face8 .inner>div:nth-of-type(2){
     width: 290px; height: 380px;
+    text-align: center;
 }
 .wrap>#circle .face8 .inner>div:nth-of-type(2) i{
     font-size: 120px; color: #fff; opacity: 0.8;

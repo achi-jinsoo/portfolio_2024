@@ -33,6 +33,28 @@ body {
     left: 280%;
   }
 }
+@keyframes tiger {
+  0% {
+    bottom: -14vw;
+    width: 129px;
+  }
+
+  80% {
+    height: 99px;
+    width: 129px;
+  }
+
+  90% {
+    height: 88px;
+    width: 134px;
+  }
+
+  to {
+    bottom: -18vw;
+    width: 140px;
+    height: 70px;
+  }
+}
 @keyframes cloud1 {
   0% {
     transform: translateX(0);
@@ -461,7 +483,7 @@ header .h_p {
   z-index: -1;
 }
 
-/* 햄버거 */
+/* 햄버거 애니메이션 */
 
 .p_contents .web .w_left .burger a {
   display: block;
@@ -475,7 +497,7 @@ header .h_p {
   animation: burger 0.6s ease-in infinite alternate;
 }
 
-/* 기차 */
+/* 기차 애니메이션 */
 
 .p_contents .web .w_left .train a {
   display: block;
@@ -488,6 +510,14 @@ header .h_p {
   bottom: -52%;
   z-index: 1;
   animation: train 6s linear infinite;
+}
+/* 타이거 애니메이션 */
+.p_contents .web .w_left .tiger img {
+  position: absolute;
+  margin-bottom: 8vw;
+  left: 35%;
+  z-index: 1;
+  animation: tiger 0.6s ease-in infinite alternate;
 }
 
 .p_contents .web .w_right section {
@@ -548,7 +578,7 @@ header .h_p {
 }
 
 .p_contents .mobile .m_right .bottom {
-  width: 410px;
+  width: 28vw;
   font-family: 'NeoDunggeunmoPro-Regular';
   color: #fff;
   font-size: 16px;

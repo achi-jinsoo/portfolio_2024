@@ -308,7 +308,7 @@ header .h_p {
   width: 75vw;
   margin: 0 auto;
   padding-left: 7%;
-  padding-bottom: 15vw;
+  padding-bottom: 5vw;
   position: relative;
   z-index: 1;
 }
@@ -345,7 +345,7 @@ header .h_p {
   width: 32vw;
 }
 
-.p_contents .slide_btn {
+.p_contents .inner .cont_top>.slide_btn {
   width: 8.6vw;
   margin: 0 auto;
   transform: translateX(-50%);
@@ -355,7 +355,7 @@ header .h_p {
   align-items: center;
 }
 
-.p_contents .slide_btn div {
+.p_contents .inner .cont_top>.slide_btn div {
   width: 20px;
   height: 20px;
   background: #fff;
@@ -371,14 +371,14 @@ header .h_p {
 
 }
 
-.p_contents .slide_btn div:hover {
+.p_contents .inner .cont_top>.slide_btn div:hover {
   font-size: 24px;
   width: 32px;
   height: 32px;
   line-height: 34px;
 }
 
-.p_contents .slide_btn .on {
+.p_contents .inner .cont_top>.slide_btn .on {
   font-size: 24px;
   width: 32px;
   height: 32px;
@@ -534,14 +534,14 @@ header .h_p {
 
 }
 .p_contents .mobile {
-  margin-top: 4vw;
+  margin-top: 12vw;
   background: #D88A3D;
-  padding-bottom: 120px;
+  padding-bottom: 4vw;
 }
 
 .p_contents .mobile .inner {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -554,13 +554,66 @@ header .h_p {
 }
 .p_contents .mobile .m_right {
   text-align: right;
+  position: relative;
 }
 .p_contents .mobile .m_right>h1 {
   margin-bottom: 7vw;
 }
 .p_contents .mobile .m_right .line {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 10vw;
+  border-top: 2px solid #fff;
+  box-shadow: 2px 4px 4px #00000050;
+}
+
+
+
+
+
+.p_contents .mobile .m_right .slide_btn {
+  width: 8.6vw;
+  position: absolute;
+  left: -216px;
+  top: 4px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.p_contents .mobile .m_right .slide_btn div {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  box-shadow: 2px 4px 4px #00000050;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #a728a9;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: 'NeoDunggeunmoPro-Regular';
+  text-align: center;
+  font-weight: 700;
 
 }
+
+.p_contents .mobile .m_right .slide_btn div:hover {
+  font-size: 24px;
+  width: 32px;
+  height: 32px;
+  line-height: 34px;
+}
+
+.p_contents .mobile .m_right .slide_btn .on {
+  font-size: 24px;
+  width: 32px;
+  height: 32px;
+  line-height: 34px;
+}
+
+
+
 .p_contents .mobile .m_right .top {
   font-family: 'DOSMyungjo';
   color: #fff;
@@ -1010,7 +1063,7 @@ header .h_p {
 /* .qck_gbook */
 .p_contents .qck_gbook {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: relative;
   z-index: 1;
 }

@@ -33,11 +33,17 @@ $(function () {
         $(this).parent().parent('header').toggleClass('on');
     });
     //프로젝트 버튼 클릭
-    $('.p_contents .inner .slide_btn div').click(function () {
+    $('.p_contents .inner .cont_top>.slide_btn div').click(function () {
         $(this).toggleClass('on').siblings().removeClass('on');
         let idx = $(this).index();
         $('.p_contents .web .w_left section').eq(idx).addClass('on').siblings().removeClass('on');
         $('.p_contents .web .w_right section').eq(idx).addClass('on').siblings().removeClass('on');
+    });
+    $('.p_contents .mobile .m_right .slide_btn div').click(function () {
+        $(this).toggleClass('on').siblings().removeClass('on');
+        let idx = $(this).index();
+        $('.p_contents .m_left section').eq(idx).addClass('on').siblings().removeClass('on');
+        $('.p_contents .m_right section').eq(idx).addClass('on').siblings().removeClass('on');
     });
     /* 구름 이동 스크롤 이벤트 시작 */
     $(window).scroll(function () {

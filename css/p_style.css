@@ -634,18 +634,25 @@ header .h_p {
   width: 28vw;
   font-family: 'NeoDunggeunmoPro-Regular';
   color: #fff;
-  font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 24px;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  margin-bottom: 3vw;
 }
 
 
 /* 버튼 클릭 */
-.p_contents .mobile .m_right .more_btn .btn {
+.p_contents .mobile .m_right .web_btn {
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  right: 0;
+}
+.p_contents .mobile .m_right .btn {
   font-family: 'NeoDunggeunmoPro-Regular';
   font-size: 24px;
   color: #fff;
-  width: 154px;
+  width: 80px;
   line-height: 40px;
   background: #73118b;
   border: 0px;
@@ -656,11 +663,11 @@ header .h_p {
     inset 4px 0px 1px 1px gray;
 }
 
-.p_contents .mobile .m_right .more_btn .btn:hover {
+.p_contents .mobile .m_right .btn:hover {
   cursor: pointer;
 }
 
-.p_contents .mobile .m_right .more_btn .btn a:active {
+.p_contents .mobile .m_right .btn a:active {
   box-shadow:
     -4px 2px 1px 1px lightgrey,
     -4px -2px 1px 1px grey,
@@ -668,7 +675,7 @@ header .h_p {
   background-color: #2d0636;
 }
 
-.p_contents .mobile .m_right .more_btn .btn a::after {
+.p_contents .mobile .m_right .btn a::after {
   content: '';
   background: black;
   position: absolute;
@@ -679,7 +686,7 @@ header .h_p {
   z-index: -1;
 }
 
-.p_contents .mobile .m_right .more_btn .btn a::before {
+.p_contents .mobile .m_right .btn a::before {
   content: '';
   background: black;
   position: absolute;

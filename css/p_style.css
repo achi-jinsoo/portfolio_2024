@@ -527,12 +527,6 @@ header .h_p {
 .p_contents .web .w_right section.on {
   display: block;
 }
-.p_contents .web .w_right section.takeastroll .phone1 {
-
-}
-.p_contents .web .w_right section.takeastroll .phone2 {
-
-}
 .p_contents .mobile {
   margin-top: 12vw;
   background: #D88A3D;
@@ -552,6 +546,14 @@ header .h_p {
 .p_contents .mobile .m_left img {
   width: 32vw;
 }
+.p_contents .mobile .m_left section {
+  display: none;
+}
+.p_contents .mobile .m_left section.on {
+  display: block;
+}
+
+
 .p_contents .mobile .m_right {
   text-align: right;
   position: relative;
@@ -612,8 +614,12 @@ header .h_p {
   line-height: 34px;
 }
 
-
-
+.p_contents .mobile .m_right section {
+  display: none;
+}
+.p_contents .mobile .m_right section.on {
+  display: block;
+}
 .p_contents .mobile .m_right .top {
   font-family: 'DOSMyungjo';
   color: #fff;

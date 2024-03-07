@@ -544,8 +544,8 @@ header .h_p {
   display: inline-block;
 }
 
-.p_contents .mobile .m_left img {
-  width: 32vw;
+.p_contents .mobile .m_left .screen .txt, .p_contents .mobile .m_left .phone .txt {
+  animation: none;
 }
 .p_contents .mobile .m_left section {
   display: none;
@@ -657,7 +657,7 @@ header .h_p {
 }
 .p_contents .mobile .m_right .btn {
   font-family: 'NeoDunggeunmoPro-Regular';
-  font-size: 24px;
+  font-size: 20px;
   color: #fff;
   width: 80px;
   line-height: 40px;

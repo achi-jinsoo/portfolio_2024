@@ -411,7 +411,9 @@ main .typewriter .container p.typeText {
     text-decoration: underline;
     text-underline-position: from-font;
 }
-
+.contents .display .dis_p .my_info .develop_sns ul li span {
+    font-size: 1vw;
+}
 .contents .display .dis_p pre.typing.fade {
     opacity: 0;
 }
